@@ -1,0 +1,102 @@
+<DOCTYPE html></DOCTYPE>
+<!--
+This is just a form to take in user information.
+The back end should be Flask, that part will be
+ajusted until it is good enough to hold the user
+data.
+-->
+<!-- Latest compiled and minified CSS -->
+<html>
+    <head>
+        <title>ONBOARDING FORM</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </head>
+
+
+    <div id='form'>
+    <form method="post"  action="/userdata/">
+        <strong>First name:</strong><br>
+        <input type="text" name="firstname">
+        <br>
+        <strong>Last name:</strong><br>
+        <input type="text" name="lastname">
+        <br>
+        <strong>Email:</strong><br>
+        <input type="text" name="youremail">
+        <select name="drop1">
+            <option value="shredz.com">@shredz.com</option>
+            <option value="skinny.com">@skinny.com</option>
+            <option value="flavorgod.com">@flavorgod.com</option>
+            <option value="fitlifegroup.com">@fitlifegroup.com</option>
+            <option value="itlifemediagroup.com">@itlifemediagroup.com</option>
+            <option value="wehandleship.com">@wehandleship.com</option>
+        </select>
+        <br>
+        <strong>Job Title:</strong><br>
+        <input type="text" name="title">
+        <br>
+        <strong>Managers Email:</strong><br>
+        <input type="text" name="email2">
+        <select name="drop2">
+            <option value="shredz.com">@shredz.com</option>
+            <option value="skinny.com">@skinny.com</option>
+            <option value="flavorgod.com">@flavorgod.com</option>
+            <option value="fitlifegroup.com">@fitlifegroup.com</option>
+            <option value="itlifemediagroup.com">@itlifemediagroup.com</option>
+            <option value="wehandleship.com">@wehandleship.com</option>
+        </select>
+        <br>
+        <strong>Start Date:</strong><br>
+        <input type="text" name="startdate"><br>
+        <strong>Desired Password:</strong><br>
+        <input type="password" name="password">
+        <br>
+        <strong>Accounts needed:</strong><br>
+        <input type="checkbox" name="needed_accounts" value="zenddesk"> Zenddesk
+        <br><input type="checkbox" name="winderlist" value="wunderlist"> Wunderlist
+        <br><input type="checkbox" name="dropbox" value="dropbox"> Dropbox
+        <br><input type="checkbox" name="Adobe Suite" value="Adobe Suite">  Adobe Suite
+        <br><input type="checkbox" name="8x8 " value="8x8 "> 8x8
+        <br><input type="checkbox" name="Microsoft Office" value="Microsoft Office"> Microsoft Office
+        <br><input type="checkbox" name="Wehandleship Dash" value="Wehandleship Dash"> Wehandleship Dash
+        <br><input type="checkbox" name="SHREDZ Dash" value="SHREDZ Dash"> SHREDZ Dash
+        <br><input type="checkbox" name="Flavor Dash" value="Flavor Dash"> Flavor Dash
+        <br><input type="checkbox" name="Skinny Dash" value="Skinny Dash"> Skinny Dash
+        <br><input type="checkbox" name="Amazon Seller Central (Skinny)" value="Amazon Seller Central (Skinny)"> Amazon Seller Central (Skinny)
+        <br><input type="checkbox" name="Amazon.com (Skinny)" value="Amazon.com (Skinny)"> Amazon.com (Skinny)
+        <br><input type="checkbox" name="Amazon Seller Central (FlavorGod)" value="Amazon Seller Central (FlavorGod)"> Amazon Seller Central (FlavorGod)
+        <br><input type="checkbox" name="Amazon.com (FlavorGod)" value="Amazon.com (FlavorGod)"> Amazon.com (FlavorGod)
+        <br><input type="checkbox" name="Amazon Seller Central (SHREDZ)" value="Amazon Seller Central (SHREDZ)"> Amazon Seller Central (SHREDZ)
+        <br><input type="checkbox" name="Amazon.com (SHREDZ)" value="Amazon.com (SHREDZ)"> Amazon.com (SHREDZ)
+        <br>
+        <strong>Does this employee need a computer?</strong>
+        <select name="need_pc">
+            <option value="yes">YES</option>
+            <option value="no">NO</option>
+        </select>
+        <br>
+        <strong>What type of computer do they perfer?</strong>
+        <select name="pc_type">
+            <option value="PC">PC</option>
+            <option value="MAC">MAC</option>
+            <option value="NONE">None</option>
+        </select>
+        <br>
+        <strong>What type of computer setup do they need?</strong>
+        <select name="portable">
+            <option value="Laptop">Laptop</option>
+            <option value="Desktp">Desktop</option>
+            <option value="NONE">None</option>
+        </select>
+        <br>
+        <label>Text Area</label>
+        <textarea name="notes" id="myTextArea" rows = "3" cols = "80">Your Comments or Notes here.</textarea>
+        <br>
+        <strong>Submitted By:</strong> <input type="text" name="submitter">
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+</html>
